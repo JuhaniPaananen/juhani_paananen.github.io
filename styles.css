@@ -65,6 +65,15 @@ body {
     color: var(--subtext-color) !important;
 }
 
+.item {
+    background: var(--panel-light);
+    padding: 20px 22px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
 .profile-img {
     width: 140px;
     height: 140px;
