@@ -1,7 +1,10 @@
 /* ===== VARIABLES ===== */
 :root {
-    --bg-color: #242424;
-    --text-color: #f7f7f7;
+    --bg-color: #181818;
+    --panel-dark: #1f1f1f;
+    --panel-light: #242424;
+    --text-color: #eaeaea;
+    --subtext-color: #b5b5b5;
     --primary-color: #2c67f2;
     --section-title-size: 1.3rem;
     --font-family: "Arial", sans-serif;
@@ -16,18 +19,20 @@ body {
     padding: 40px;
 }
 
+/* Main container */
 .resume-container {
     width: 100%;
     max-width: 1050px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background: #fff;
-    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    background: var(--panel-dark);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
     border-radius: 10px;
     overflow: hidden;
 }
 
+/* ===== SECTIONS ===== */
 .section {
     margin-bottom: 30px;
 }
@@ -40,6 +45,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Lists */
 .list {
     list-style: none;
     padding: 0;
@@ -62,7 +68,7 @@ body {
 
 /* ===== LEFT SIDE ===== */
 .resume-left {
-    background: #242424;
+    background: var(--panel-light);
     padding: 35px;
 }
 
@@ -70,6 +76,7 @@ body {
     width: 140px;
     border-radius: 50%;
     margin-bottom: 15px;
+    border: 3px solid #333;
 }
 
 .name {
@@ -79,7 +86,7 @@ body {
 }
 
 .profession {
-    color: gray;
+    color: var(--subtext-color);
     margin-top: 5px;
 }
 
@@ -90,6 +97,7 @@ body {
 /* ===== RIGHT SIDE ===== */
 .resume-right {
     padding: 40px;
+    background: var(--panel-dark);
 }
 
 .item {
@@ -102,7 +110,7 @@ body {
 
 .item-date {
     font-size: 0.9rem;
-    color: gray;
+    color: var(--subtext-color);
 }
 
 /* ===== RESPONSIVE ===== */
